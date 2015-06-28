@@ -5,6 +5,10 @@ module EY
   module Notifier
     class Error < StandardError; end
 
+    module Serverside
+      autoload :Deploy, 'engineyard/notifier/engineyard-serverside/deploy'
+    end
+
     module Notifications
     end
 
